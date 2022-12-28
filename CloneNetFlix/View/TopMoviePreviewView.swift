@@ -43,7 +43,7 @@ struct TopMoviePreviewView: View {
                     Spacer()
                     SmallVerticalButton(text: "My list", isOnImage: "checkmark", isOffImage: "plus", isOn: true){}
                     Spacer()
-                    WhiteButton(text: "Play", imageName: "play.fill" ){}
+                    PlayButton(text: "Play", imageName: "play.fill" ){}
                         .frame(width: 120)
                     Spacer()
                     SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true){}
@@ -51,6 +51,8 @@ struct TopMoviePreviewView: View {
 
                 }
             }
+            .background(LinearGradient.linearGradient                .padding(.top, 250)
+            )
             
         }
         .foregroundColor(.white)
